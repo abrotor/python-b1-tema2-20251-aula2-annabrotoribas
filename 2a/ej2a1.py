@@ -46,7 +46,7 @@ Exemple:
      sum_even_numbers_in_list_do_while(shopping_list)
 
      Sortida:
-     En tots tres casos el resultat és 882, que és la suma de 10, 44, 188 i 640.
+     En tots tres casos el resultat és 882, que és la suma de 10, 44, 188 i 640.xxxx
 """
 
 
