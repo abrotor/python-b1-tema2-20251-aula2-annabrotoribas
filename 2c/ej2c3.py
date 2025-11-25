@@ -75,10 +75,16 @@ def factorial(number: int):
 
 
 def calculate_factorial(number: int):
+    if number < 0:
+        raise ValueError("Factorial of a negative number cannot be calculated.")
+    if number == 0:
+        return 1
+    return number * factorial(number - 1)
     # Write here your code
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 
-# calculate_factorial(5)
+print(factorial(5))
+print(calculate_factorial(-10))
