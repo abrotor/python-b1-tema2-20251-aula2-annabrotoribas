@@ -46,29 +46,43 @@ Exemple:
      sum_even_numbers_in_list_do_while(shopping_list)
 
      Sortida:
-     En tots tres casos el resultat és 882, que és la suma de 10, 44, 188 i 640.xxxx
+     En tots tres casos el resultat és 882, que és la suma de 10, 44, 188 i 640.
 """
 
 
 def sum_even_numbers_in_list_while(list_numbers):
     # Write here your code
+    sum_even_numbers_in_list_while = 0
+    i = 0
+    n = list_numbers[i]
+    while i <= list_numbers[-1]:
+        i = i + 1
+        if n %2 == 0:
+            sum_even_numbers_in_list_while = sum_even_numbers_in_list_while + n
+    return sum_even_numbers_in_list_while
+
     pass
 
 
 def sum_even_numbers_in_list_for(list_numbers):
     # Write here your code
+    sum_even_numbers_in_list_for = 0
+    for n in list_numbers:
+        if n %2 == 0:
+          sum_even_numbers_in_list_for = sum_even_numbers_in_list_for + n
+    return sum_even_numbers_in_list_for
     pass
-
 
 def sum_even_numbers_in_list_do_while(list_numbers):
     # Write here your code
+
     pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 
-# shopping_list = [10, 449, 33, 44, 188, 640]
-# print(sum_even_numbers_in_list_while(shopping_list))
-# print(sum_even_numbers_in_list_for(shopping_list))
-# print(sum_even_numbers_in_list_do_while(shopping_list))
+shopping_list = [10, 449, 33, 44, 188, 640]
+print(sum_even_numbers_in_list_while(shopping_list))
+print(sum_even_numbers_in_list_for(shopping_list))
+print(sum_even_numbers_in_list_do_while(shopping_list))
