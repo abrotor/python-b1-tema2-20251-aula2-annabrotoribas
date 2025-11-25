@@ -82,7 +82,7 @@ def sum_even_numbers_in_list_do_while(list_numbers):
         i = i + 1
         if n %2 == 0:
             sum_even_numbers_in_list_do_while = sum_even_numbers_in_list_do_while + n
-        if i > len(list_numbers)-1:
+        if i == len(list_numbers):
             break
     return sum_even_numbers_in_list_do_while
     pass
