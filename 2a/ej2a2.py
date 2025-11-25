@@ -67,15 +67,19 @@ Sortida:
 
 def tax_calculation_group_1(value: int):
     # Write here your code
+    tax_calculation_group_1 = 19 * value/100
+    return tax_calculation_group_1
     pass
 
 
 def tax_calculation_global(value: int):
     # Write here your code
+    tax_calculation_global = 24 * value/100
+    return tax_calculation_global
     pass
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(f"The taxes for group global: {tax_calculation_global(500)}")
-# print(f"The taxes for group 1: {tax_calculation_group_1(500)}")
+print(f"The taxes for group global: {tax_calculation_global(500)}")
+print(f"The taxes for group 1: {tax_calculation_group_1(500)}")
