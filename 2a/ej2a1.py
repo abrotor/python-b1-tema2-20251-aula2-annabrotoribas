@@ -54,8 +54,8 @@ def sum_even_numbers_in_list_while(list_numbers):
     # Write here your code
     sum_even_numbers_in_list_while = 0
     i = 0
-    n = list_numbers[i]
-    while i <= list_numbers[-1]:
+    while i < len(list_numbers):
+        n = list_numbers[i]
         i = i + 1
         if n %2 == 0:
             sum_even_numbers_in_list_while = sum_even_numbers_in_list_while + n
@@ -75,7 +75,16 @@ def sum_even_numbers_in_list_for(list_numbers):
 
 def sum_even_numbers_in_list_do_while(list_numbers):
     # Write here your code
-
+    sum_even_numbers_in_list_do_while = 0
+    i = 0
+    while True:
+        n = list_numbers[i]
+        i = i + 1
+        if n %2 == 0:
+            sum_even_numbers_in_list_do_while = sum_even_numbers_in_list_do_while + n
+        if i > len(list_numbers)-1:
+            break
+    return sum_even_numbers_in_list_do_while
     pass
 
 
