@@ -52,9 +52,9 @@ def kg_to_lb(kg):
     # Write here your code
    
     if type(kg) != int and type(kg) != float:
-        return TypeError("Ha de ser un numero")
+        raise TypeError("Ha de ser un numero")
     elif kg <= 0:
-        return ValueError("A de ser major a 0")
+        raise ValueError("A de ser major a 0")
     else:
         return round(kg*2.20462, 2)
 
@@ -63,4 +63,4 @@ def kg_to_lb(kg):
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-print(kg_to_lb(0))
+print(kg_to_lb(1))

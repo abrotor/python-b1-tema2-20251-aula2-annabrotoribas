@@ -80,6 +80,7 @@ def calculate_max_and_min(list_numbers):
                 numMax = num
             if num < numMin:
                 numMin = num
+    print(numMin, numMax)
     return numMin, numMax
 
         

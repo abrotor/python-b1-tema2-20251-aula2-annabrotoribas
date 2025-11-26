@@ -54,17 +54,17 @@ Exemples:
 def division_list(list_numbers: List, number: int) -> List[float]:
     result = []
     if type(number)!= int and type(number)!= float:
-        raise IndexError(f"Value {number} is not numeric.")
+        raise TypeErrorError(f"Value {number} is not numeric.")
     for number_in_list in list_numbers:
         if type(number_in_list)!= int and type(number_in_list)!= float:
-            raise IndexError(f"Value {number_in_list} is not numeric.")
+            raise TypeError(f"Value {number_in_list} is not numeric.")
         else: 
             number_in_list = number_in_list/number
         result.append(number_in_list)
     return result
 
 
-list_numbers = [1.5, 2.5, 9.2, 0, 22]
+list_numbers = [5, 2.5, 9.2, 0, 22]
 scalar_number = 4.0
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
