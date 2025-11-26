@@ -54,7 +54,7 @@ Exemples:
 def division_list(list_numbers: List, number: int) -> List[float]:
     result = []
     if type(number)!= int and type(number)!= float:
-        raise TypeErrorError(f"Value {number} is not numeric.")
+        raise TypeError(f"Value {number} is not numeric.")
     for number_in_list in list_numbers:
         if type(number_in_list)!= int and type(number_in_list)!= float:
             raise TypeError(f"Value {number_in_list} is not numeric.")
